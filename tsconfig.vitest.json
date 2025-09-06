@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
+    "types": ["vitest/globals", "happy-dom"]
+  },
+  "include": ["tests/**/*.ts", "tests/**/*.tsx", "tests/**/*.vue", "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
