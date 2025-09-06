@@ -1,3 +1,4 @@
+import cvs from "./data/cvs.json";
 import schools from "./data/schools.json";
 import type { Student } from "./types";
 
@@ -7,7 +8,7 @@ export type QuizResult = "correct" | "partial" | "incorrect";
 export interface Quiz<T extends QuizKey = QuizKey> {
   key: T;
   label: string;
-  type: "text" | "select";
+  type: "text" | "select" | "autocomplete";
   options?: readonly string[];
   evaluate: (answer: string, correct: Student[T]) => QuizResult;
 }
@@ -18,9 +19,16 @@ const normalize = (val: unknown, unit = "") =>
 export const quizzes: Quiz[] = [
   {
     key: "School",
-    label: "所属校",
-    type: "select",
+    label: "学園",
+    type: "autocomplete",
     options: schools,
+    evaluate: (ans, cor) => (normalize(ans) === normalize(cor) ? "correct" : "incorrect"),
+  },
+  {
+    key: "CharacterVoice",
+    label: "声優",
+    type: "autocomplete",
+    options: cvs,
     evaluate: (ans, cor) => (normalize(ans) === normalize(cor) ? "correct" : "incorrect"),
   },
   {

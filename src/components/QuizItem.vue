@@ -1,7 +1,7 @@
 <template>
   <div>
     <component
-      :is="quiz.type === 'select' ? 'v-select' : 'v-text-field'"
+      :is="quiz.type === 'autocomplete' ? 'v-autocomplete' : 'v-text-field'"
       v-model="answer"
       :label="quiz.label"
       :items="quiz.options"
