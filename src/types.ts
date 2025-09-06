@@ -11,4 +11,6 @@ export interface Student {
   CharacterAge: string;
   CharacterVoice: string;
   CharHeightMetric: string;
+  BirthDayMM: string | null;
+  BirthDayDD: string | null;
 }

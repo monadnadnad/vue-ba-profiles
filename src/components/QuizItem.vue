@@ -17,10 +17,9 @@
 
 <script setup lang="ts">
   import type { Quiz, QuizResult } from "../quiz";
-  import type { Student } from "../types";
 
   defineProps<{
-    quiz: Quiz<keyof Student>;
+    quiz: Quiz;
     isJudged: boolean;
     result: QuizResult | null;
     correctAnswer: string;

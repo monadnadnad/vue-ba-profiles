@@ -1,9 +1,10 @@
 import schools from "./data/schools.json";
 import type { Student } from "./types";
 
+export type QuizKey = Exclude<keyof Student, "Id">;
 export type QuizResult = "correct" | "partial" | "incorrect";
 
-export interface Quiz<T extends keyof Student> {
+export interface Quiz<T extends QuizKey = QuizKey> {
   key: T;
   label: string;
   type: "text" | "select";
@@ -14,7 +15,7 @@ export interface Quiz<T extends keyof Student> {
 const normalize = (val: unknown, unit = "") =>
   String(val).trim().toLowerCase().replace(/\s+/g, " ").replace(new RegExp(unit, "g"), "");
 
-export const quizzes: Quiz<keyof Student>[] = [
+export const quizzes: Quiz[] = [
   {
     key: "School",
     label: "所属校",
@@ -34,7 +35,18 @@ export const quizzes: Quiz<keyof Student>[] = [
     type: "text",
     evaluate: (ans, cor) => (normalize(ans, "cm") === normalize(cor, "cm") ? "correct" : "incorrect"),
   },
+  {
+    key: "BirthDayMM",
+    label: "誕生月",
+    type: "text",
+    evaluate: (ans, cor) => (normalize(ans, "月") === normalize(cor, "月") ? "correct" : "incorrect"),
+  },
+  {
+    key: "BirthDayDD",
+    label: "誕生日",
+    type: "text",
+    evaluate: (ans, cor) => (normalize(ans, "日") === normalize(cor, "日") ? "correct" : "incorrect"),
+  },
 ];
 
-export const checkAnswer = (student: Student, quiz: Quiz<keyof Student>, answer: string) =>
-  quiz.evaluate(answer, student[quiz.key]);
+export const checkAnswer = (student: Student, quiz: Quiz, answer: string) => quiz.evaluate(answer, student[quiz.key]);
