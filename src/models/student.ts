@@ -1,3 +1,6 @@
+import type { WithNA } from "./na";
+import { NA } from "./na";
+
 type Id = number;
 type Name = string;
 type School = string;
@@ -28,6 +31,8 @@ export interface Student {
   id: number;
   name: string;
   birthday: string;
+  birthdayMM: WithNA<number>;
+  birthdayDD: WithNA<number>;
   school: string;
   club: string;
   familyName: string;
@@ -39,10 +44,15 @@ export interface Student {
 }
 
 export function normalizeStudent(raw: RawStudent): Student {
+  const [mmStr, ddStr] = raw.BirthDay === "-" ? ["", ""] : raw.BirthDay.split("/");
+  const mm = mmStr === "" ? NA : Number(mmStr);
+  const dd = ddStr === "" ? NA : Number(ddStr);
   return {
     id: raw.Id,
     name: raw.Name,
     birthday: raw.BirthDay,
+    birthdayMM: mm,
+    birthdayDD: dd,
     school: raw.School,
     club: raw.Club,
     familyName: raw.FamilyName,

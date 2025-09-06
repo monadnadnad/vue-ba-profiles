@@ -1,14 +1,11 @@
+import type { WithNA } from "./na";
 import type { Student } from "./student";
 
-export type FieldKey = Exclude<keyof Student, "id" | "name" | "familyNameRuby">;
-
-export type BirthdaySelection = {
-  month: number | null;
-  day: number | null;
-};
+export type FieldKey = Exclude<keyof Student, "id" | "name" | "familyNameRuby" | "birthday">;
 
 export type SelectionValueMap = {
-  birthday: BirthdaySelection;
+  birthdayMM: WithNA<number>;
+  birthdayDD: WithNA<number>;
   school: string | null;
   club: string | null;
   familyName: string | null;
@@ -20,16 +17,21 @@ export type SelectionValueMap = {
 
 export type Selection = { [K in FieldKey]: SelectionValueMap[K] };
 
-export type SchoolSelection = string | null;
-
 export interface CombinedSelection {
-  birthday: BirthdaySelection;
-  school: SchoolSelection;
+  birthdayMM: WithNA<number>;
+  birthdayDD: WithNA<number>;
+  school: string | null;
 }
 
 export type ResultField =
-  | { key: "birthday"; label: string; userInput: BirthdaySelection; ok: boolean; correct?: string }
-  | { key: "school"; label: string; userInput: SchoolSelection; ok: boolean; correct?: string };
+  | {
+      key: "birthday";
+      label: string;
+      userInput: { month: WithNA<number>; day: WithNA<number> };
+      ok: boolean;
+      correct?: string;
+    }
+  | { key: "school"; label: string; userInput: string | null; ok: boolean; correct?: string };
 
 export type ResultPayload = ResultField[];
 

@@ -13,6 +13,7 @@
 
 <script setup lang="ts">
   import { computed } from "vue";
+  import { isNA } from "../models/na";
   import type { ResultField, ResultPayload } from "../models/quiz";
 
   const props = defineProps<{
@@ -29,7 +30,7 @@
     if (r.key === "birthday") {
       const m = r.userInput.month;
       const d = r.userInput.day;
-      return m && d ? `${m}/${d}` : "未選択";
+      return isNA(m) || isNA(d) ? "未選択" : `${m}/${d}`;
     }
     return r.userInput ?? "未選択";
   };
