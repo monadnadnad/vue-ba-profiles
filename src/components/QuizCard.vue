@@ -1,6 +1,9 @@
 <template>
   <v-card>
-    <v-card-title>名前: {{ student.Name }}</v-card-title>
+    <v-card-title>
+      <v-avatar :image="iconUrl" class="mr-4" />
+      {{ student.Name }}
+    </v-card-title>
     <v-card-text>
       <QuizItem
         v-for="q in quizzes"
@@ -20,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from "vue";
+  import { computed, ref } from "vue";
   import { checkAnswer, quizzes, type QuizResult } from "../quiz";
   import type { Student } from "../types";
   import QuizItem from "./QuizItem.vue";
@@ -35,4 +38,8 @@
       results.value[q.key] = checkAnswer(props.student, q, answers.value[q.key]);
     });
   };
+
+  const iconUrl = computed(
+    () => `https://raw.githubusercontent.com/SchaleDB/SchaleDB/main/images/student/icon/${props.student.Id}.webp`
+  );
 </script>
