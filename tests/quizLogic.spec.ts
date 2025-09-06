@@ -1,7 +1,7 @@
 import { checkBirthday } from "../src/composables/useQuiz";
 
 describe("Quiz Logic", () => {
-  const hifumiBirthday = "11-27";
+  const hifumiBirthday = "11/27";
 
   it("should return true for a correct birthday answer", () => {
     const userAnswer = { month: 11, day: 27 };
