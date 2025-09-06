@@ -2,7 +2,8 @@ import { mkdir, writeFile } from "node:fs/promises";
 const KEEP_KEYS = ["Id", "Name", "School", "Club", "Birthday", "FamilyName", "CharacterVoice"];
 const STUDENTS_URL = "https://raw.githubusercontent.com/SchaleDB/SchaleDB/refs/heads/main/data/jp/students.json";
 const L10N_URL = "https://raw.githubusercontent.com/SchaleDB/SchaleDB/refs/heads/main/data/jp/localization.json";
-const OUT = "./src/data/students.json";
+const OUT_STUDENTS = "./src/data/students.json";
+const OUT_SCHOOLS_JSON = "./src/data/schools.json";
 
 const j = (u) =>
   fetch(u).then((r) => {
@@ -26,8 +27,15 @@ const run = async () => {
   });
 
   await mkdir("./src/data", { recursive: true });
-  await writeFile(OUT, JSON.stringify(out, null, 2), "utf8");
-  console.log(`✅ ${OUT} に ${out.length} 件を書き出し`);
+  await writeFile(OUT_STUDENTS, JSON.stringify(out, null, 2), "utf8");
+  console.log(`✅ ${OUT_STUDENTS} に ${out.length} 件を書き出し`);
+
+  const schools = Array.from(
+    new Set(out.map((x) => x.School).filter((x) => typeof x === "string" && x.trim().length > 0))
+  ).sort((a, b) => a.localeCompare(b, "ja"));
+
+  await writeFile(OUT_SCHOOLS_JSON, JSON.stringify(schools, null, 2), "utf8");
+  console.log(`✅ ${OUT_SCHOOLS_JSON} を生成 (${schools.length} 校)`);
 };
 
 run().catch((e) => (console.error("❌", e), process.exit(1)));
