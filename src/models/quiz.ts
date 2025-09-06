@@ -13,8 +13,8 @@ export interface CombinedSelection {
 }
 
 export type ResultField =
-  | { key: "birthday"; label: string; userInput: BirthdaySelection; correct: string; ok: boolean }
-  | { key: "school"; label: string; userInput: SchoolSelection; correct: string; ok: boolean };
+  | { key: "birthday"; label: string; userInput: BirthdaySelection; ok: boolean; correct?: string }
+  | { key: "school"; label: string; userInput: SchoolSelection; ok: boolean; correct?: string };
 
 export type ResultPayload = ResultField[];
 

@@ -1,38 +1,36 @@
-// Raw schema as delivered from the external DB (note the Uppercase keys)
+type Id = number;
+type Name = string;
+type School = string;
+type Club = string;
+type BirthDay = string;
+type FamilyName = string;
+type CharacterVoice = string;
+
 export interface RawStudent {
-  Id: number;
-  Name: string;
-  School: string;
-  Club: string;
-  Birthday: string; // e.g. "3月12日"
-  FamilyName: string;
-  CharacterVoice: string;
+  Id: Id;
+  Name: Name;
+  BirthDay: BirthDay;
+  School: School;
+  Club: Club;
+  FamilyName: FamilyName;
+  CharacterVoice: CharacterVoice;
 }
 
-// Internal normalized model used by the app
 export interface Student {
   id: number;
   name: string;
-  birthday: string; // normalized as "M-D" e.g. "3-12"
+  birthday?: string;
   school: string;
   club: string;
-  familyName: string;
-  characterVoice: string;
-}
-
-function normalizeBirthday(jp: string): string {
-  // Convert formats like "3月12日" to "3-12"
-  const m = jp.match(/(\d+)月(\d+)日/);
-  if (!m) return jp;
-  const [, month, day] = m;
-  return `${Number(month)}-${Number(day)}`;
+  familyName?: string;
+  characterVoice?: string;
 }
 
 export function normalizeStudent(raw: RawStudent): Student {
   return {
     id: raw.Id,
     name: raw.Name,
-    birthday: normalizeBirthday(raw.Birthday),
+    birthday: raw.BirthDay === "-" ? undefined : raw.BirthDay,
     school: raw.School,
     club: raw.Club,
     familyName: raw.FamilyName,

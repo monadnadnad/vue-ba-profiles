@@ -1,5 +1,18 @@
 import { mkdir, writeFile } from "node:fs/promises";
-const KEEP_KEYS = ["Id", "Name", "School", "Club", "Birthday", "FamilyName", "CharacterVoice"];
+const KEEP_KEYS = [
+  "Id",
+  "Name",
+  "School",
+  "SchoolYear",
+  "Club",
+  "BirthDay",
+  "FamilyName",
+  "FamilyNameRuby",
+  "Hobby",
+  "CharacterAge",
+  "CharacterVoice",
+  "CharHeightMetric",
+];
 const STUDENTS_URL = "https://raw.githubusercontent.com/SchaleDB/SchaleDB/refs/heads/main/data/jp/students.json";
 const L10N_URL = "https://raw.githubusercontent.com/SchaleDB/SchaleDB/refs/heads/main/data/jp/localization.json";
 const OUT_STUDENTS = "./src/data/students.json";

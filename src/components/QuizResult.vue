@@ -29,7 +29,7 @@
     if (r.key === "birthday") {
       const m = r.userInput.month;
       const d = r.userInput.day;
-      return m && d ? `${m}-${d}` : "未選択";
+      return m && d ? `${m}/${d}` : "未選択";
     }
     return r.userInput ?? "未選択";
   };
