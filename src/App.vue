@@ -3,15 +3,13 @@
   import BirthdayInput from "./components/BirthdayInput.vue";
   import QuizResult from "./components/QuizResult.vue";
   import { checkBirthday } from "./composables/useQuiz";
+  import studentsData from "./data/students.json";
   import type { BirthdaySelection } from "./models/quiz";
-  import type { Student } from "./models/student";
+  import type { RawStudent, Student } from "./models/student";
+  import { normalizeStudent } from "./models/student";
 
-  const student: Student = {
-    id: "hifumi",
-    name: "ヒフミ",
-    birthday: "11-27",
-    profileImage: "",
-  };
+  const students = (studentsData as RawStudent[]).map(normalizeStudent) as Student[];
+  const student: Student = students[Math.floor(Math.random() * students.length)];
 
   const selection = ref<BirthdaySelection>({ month: null, day: null });
   const isCorrect = ref<boolean | null>(null);

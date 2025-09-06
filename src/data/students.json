@@ -1,0 +1,1748 @@
+[
+  {
+    "Id": 10000,
+    "Name": "アル",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "3月12日",
+    "FamilyName": "陸八魔",
+    "CharacterVoice": "近藤玲奈"
+  },
+  {
+    "Id": 10001,
+    "Name": "エイミ",
+    "School": "ミレニアム",
+    "Club": "特異現象捜査部",
+    "Birthday": "5月1日",
+    "FamilyName": "和泉元",
+    "CharacterVoice": "松永あかね"
+  },
+  {
+    "Id": 10002,
+    "Name": "ハルナ",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "3月1日",
+    "FamilyName": "黒舘",
+    "CharacterVoice": "田所あずさ"
+  },
+  {
+    "Id": 10003,
+    "Name": "ヒフミ",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "11月27日",
+    "FamilyName": "阿慈谷",
+    "CharacterVoice": "本渡楓"
+  },
+  {
+    "Id": 10004,
+    "Name": "ヒナ",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "2月19日",
+    "FamilyName": "空崎",
+    "CharacterVoice": "広橋涼"
+  },
+  {
+    "Id": 10005,
+    "Name": "ホシノ",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "1月2日",
+    "FamilyName": "小鳥遊",
+    "CharacterVoice": "花守ゆみり"
+  },
+  {
+    "Id": 10006,
+    "Name": "イオリ",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "11月8日",
+    "FamilyName": "銀鏡",
+    "CharacterVoice": "佐倉綾音"
+  },
+  {
+    "Id": 10007,
+    "Name": "マキ",
+    "School": "ミレニアム",
+    "Club": "ヴェリタス",
+    "Birthday": "8月1日",
+    "FamilyName": "小塗",
+    "CharacterVoice": "三上枝織"
+  },
+  {
+    "Id": 10008,
+    "Name": "ネル",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "8月17日",
+    "FamilyName": "美甘",
+    "CharacterVoice": "小清水亜美"
+  },
+  {
+    "Id": 10009,
+    "Name": "イズミ",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "5月11日",
+    "FamilyName": "獅子堂",
+    "CharacterVoice": "久保ユリカ"
+  },
+  {
+    "Id": 10010,
+    "Name": "シロコ",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "5月16日",
+    "FamilyName": "砂狼",
+    "CharacterVoice": "小倉唯"
+  },
+  {
+    "Id": 10011,
+    "Name": "シュン",
+    "School": "山海経",
+    "Club": "梅花園",
+    "Birthday": "2月5日",
+    "FamilyName": "春原",
+    "CharacterVoice": "伊藤静"
+  },
+  {
+    "Id": 10012,
+    "Name": "スミレ",
+    "School": "ミレニアム",
+    "Club": "トレーニング部",
+    "Birthday": "8月20日",
+    "FamilyName": "乙花",
+    "CharacterVoice": "今井麻美"
+  },
+  {
+    "Id": 10013,
+    "Name": "ツルギ",
+    "School": "トリニティ",
+    "Club": "正義実現委員会",
+    "Birthday": "6月24日",
+    "FamilyName": "剣先",
+    "CharacterVoice": "小林ゆう"
+  },
+  {
+    "Id": 13000,
+    "Name": "アカネ",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "4月1日",
+    "FamilyName": "室笠",
+    "CharacterVoice": "原由実"
+  },
+  {
+    "Id": 13001,
+    "Name": "チセ",
+    "School": "百鬼夜行",
+    "Club": "陰陽部",
+    "Birthday": "7月13日",
+    "FamilyName": "和楽",
+    "CharacterVoice": "嶋村侑"
+  },
+  {
+    "Id": 13002,
+    "Name": "アカリ",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "12月9日",
+    "FamilyName": "鰐渕",
+    "CharacterVoice": "森嶋優花"
+  },
+  {
+    "Id": 13003,
+    "Name": "ハスミ",
+    "School": "トリニティ",
+    "Club": "正義実現委員会",
+    "Birthday": "12月12日",
+    "FamilyName": "羽川",
+    "CharacterVoice": "瀬戸麻沙美"
+  },
+  {
+    "Id": 13004,
+    "Name": "ノノミ",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "9月1日",
+    "FamilyName": "十六夜",
+    "CharacterVoice": "三浦千幸"
+  },
+  {
+    "Id": 13005,
+    "Name": "カヨコ",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "3月17日",
+    "FamilyName": "鬼方",
+    "CharacterVoice": "藤井ゆきよ"
+  },
+  {
+    "Id": 13006,
+    "Name": "ムツキ",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "7月29日",
+    "FamilyName": "浅黄",
+    "CharacterVoice": "大久保瑠美"
+  },
+  {
+    "Id": 13007,
+    "Name": "ジュンコ",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "12月27日",
+    "FamilyName": "赤司",
+    "CharacterVoice": "金元 寿子"
+  },
+  {
+    "Id": 13008,
+    "Name": "セリカ",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "6月25日",
+    "FamilyName": "黒見",
+    "CharacterVoice": "大橋彩香"
+  },
+  {
+    "Id": 13009,
+    "Name": "ツバキ",
+    "School": "百鬼夜行",
+    "Club": "修行部",
+    "Birthday": "2月3日",
+    "FamilyName": "春日",
+    "CharacterVoice": "白砂沙帆"
+  },
+  {
+    "Id": 13010,
+    "Name": "ユウカ",
+    "School": "ミレニアム",
+    "Club": "セミナー",
+    "Birthday": "3月14日",
+    "FamilyName": "早瀬",
+    "CharacterVoice": "春花らん"
+  },
+  {
+    "Id": 16000,
+    "Name": "ハルカ",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "5月13日",
+    "FamilyName": "伊草",
+    "CharacterVoice": "石飛恵里花"
+  },
+  {
+    "Id": 16001,
+    "Name": "アスナ",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "3月24日",
+    "FamilyName": "一之瀬",
+    "CharacterVoice": "長谷川育美"
+  },
+  {
+    "Id": 16002,
+    "Name": "コトリ",
+    "School": "ミレニアム",
+    "Club": "エンジニア部",
+    "Birthday": "12月31日",
+    "FamilyName": "豊見",
+    "CharacterVoice": "篠原なるみ"
+  },
+  {
+    "Id": 16003,
+    "Name": "スズミ",
+    "School": "トリニティ",
+    "Club": "トリニティ自警団",
+    "Birthday": "8月31日",
+    "FamilyName": "守月",
+    "CharacterVoice": "社本悠"
+  },
+  {
+    "Id": 16004,
+    "Name": "フィーナ",
+    "School": "百鬼夜行",
+    "Club": "お祭り運営委員会",
+    "Birthday": "11月3日",
+    "FamilyName": "朝比奈",
+    "CharacterVoice": "木戸衣吹"
+  },
+  {
+    "Id": 20000,
+    "Name": "ヒビキ",
+    "School": "ミレニアム",
+    "Club": "エンジニア部",
+    "Birthday": "4月2日",
+    "FamilyName": "猫塚",
+    "CharacterVoice": "名塚佳織"
+  },
+  {
+    "Id": 20001,
+    "Name": "カリン",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "2月2日",
+    "FamilyName": "角楯",
+    "CharacterVoice": "沼倉愛美"
+  },
+  {
+    "Id": 20002,
+    "Name": "サヤ",
+    "School": "山海経",
+    "Club": "錬丹術研究会",
+    "Birthday": "1月3日",
+    "FamilyName": "薬子",
+    "CharacterVoice": "田村ゆかり"
+  },
+  {
+    "Id": 23000,
+    "Name": "アイリ",
+    "School": "トリニティ",
+    "Club": "放課後スイーツ部",
+    "Birthday": "1月30日",
+    "FamilyName": "栗村",
+    "CharacterVoice": "水森ちこ"
+  },
+  {
+    "Id": 23001,
+    "Name": "フウカ",
+    "School": "ゲヘナ",
+    "Club": "給食部",
+    "Birthday": "4月30日",
+    "FamilyName": "愛清",
+    "CharacterVoice": "ファイルーズあい"
+  },
+  {
+    "Id": 23002,
+    "Name": "ハナエ",
+    "School": "トリニティ",
+    "Club": "救護騎士団",
+    "Birthday": "5月12日",
+    "FamilyName": "朝顔",
+    "CharacterVoice": "優木かな"
+  },
+  {
+    "Id": 23003,
+    "Name": "ハレ",
+    "School": "ミレニアム",
+    "Club": "ヴェリタス",
+    "Birthday": "4月19日",
+    "FamilyName": "小鈎",
+    "CharacterVoice": "貝原怜奈"
+  },
+  {
+    "Id": 23004,
+    "Name": "ウタハ",
+    "School": "ミレニアム",
+    "Club": "エンジニア部",
+    "Birthday": "11月13日",
+    "FamilyName": "白石",
+    "CharacterVoice": "青地希望"
+  },
+  {
+    "Id": 23005,
+    "Name": "アヤネ",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "11月12日",
+    "FamilyName": "奥空",
+    "CharacterVoice": "原田彩楓"
+  },
+  {
+    "Id": 26000,
+    "Name": "チナツ",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "8月22日",
+    "FamilyName": "火宮",
+    "CharacterVoice": "香月はるか"
+  },
+  {
+    "Id": 26001,
+    "Name": "コタマ",
+    "School": "ミレニアム",
+    "Club": "ヴェリタス",
+    "Birthday": "1月5日",
+    "FamilyName": "音瀬",
+    "CharacterVoice": "高川みな"
+  },
+  {
+    "Id": 26002,
+    "Name": "ジュリ",
+    "School": "ゲヘナ",
+    "Club": "給食部",
+    "Birthday": "10月20日",
+    "FamilyName": "牛牧",
+    "CharacterVoice": "田辺留依"
+  },
+  {
+    "Id": 26003,
+    "Name": "セリナ",
+    "School": "トリニティ",
+    "Club": "救護騎士団",
+    "Birthday": "1月6日",
+    "FamilyName": "鷲見",
+    "CharacterVoice": "涼本あきほ"
+  },
+  {
+    "Id": 26004,
+    "Name": "シミコ",
+    "School": "トリニティ",
+    "Club": "図書委員会",
+    "Birthday": "11月30日",
+    "FamilyName": "円堂",
+    "CharacterVoice": "富田美憂"
+  },
+  {
+    "Id": 26005,
+    "Name": "ヨシミ",
+    "School": "トリニティ",
+    "Club": "放課後スイーツ部",
+    "Birthday": "8月29日",
+    "FamilyName": "伊原木",
+    "CharacterVoice": "真野あゆみ"
+  },
+  {
+    "Id": 20003,
+    "Name": "マシロ",
+    "School": "トリニティ",
+    "Club": "正義実現委員会",
+    "Birthday": "6月5日",
+    "FamilyName": "静山",
+    "CharacterVoice": "鬼頭明里"
+  },
+  {
+    "Id": 10014,
+    "Name": "イズナ",
+    "School": "百鬼夜行",
+    "Club": "忍術研究部",
+    "Birthday": "12月16日",
+    "FamilyName": "久田",
+    "CharacterVoice": "阿澄佳奈"
+  },
+  {
+    "Id": 23006,
+    "Name": "シズコ",
+    "School": "百鬼夜行",
+    "Club": "お祭り運営委員会",
+    "Birthday": "7月7日",
+    "FamilyName": "河和",
+    "CharacterVoice": "森永千才"
+  },
+  {
+    "Id": 10015,
+    "Name": "アリス",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "3月25日",
+    "FamilyName": "天童",
+    "CharacterVoice": "田中美海"
+  },
+  {
+    "Id": 10016,
+    "Name": "ミドリ",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "12月8日",
+    "FamilyName": "才羽",
+    "CharacterVoice": "高田憂希"
+  },
+  {
+    "Id": 13011,
+    "Name": "モモイ",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "12月8日",
+    "FamilyName": "才羽",
+    "CharacterVoice": "徳井青空"
+  },
+  {
+    "Id": 10017,
+    "Name": "チェリノ",
+    "School": "レッドウィンター",
+    "Club": "レッドウィンター事務局",
+    "Birthday": "10月27日",
+    "FamilyName": "連河",
+    "CharacterVoice": "丹下桜"
+  },
+  {
+    "Id": 26006,
+    "Name": "ノドカ",
+    "School": "レッドウィンター",
+    "Club": "227号特別クラス",
+    "Birthday": "2月20日",
+    "FamilyName": "天見",
+    "CharacterVoice": "佐藤聡美"
+  },
+  {
+    "Id": 10018,
+    "Name": "ユズ",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "8月12日",
+    "FamilyName": "花岡",
+    "CharacterVoice": "寺澤百花"
+  },
+  {
+    "Id": 10019,
+    "Name": "アズサ",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "12月26日",
+    "FamilyName": "白洲",
+    "CharacterVoice": "種田梨沙"
+  },
+  {
+    "Id": 23007,
+    "Name": "ハナコ",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "1月3日",
+    "FamilyName": "浦和",
+    "CharacterVoice": "豊田萌絵"
+  },
+  {
+    "Id": 10020,
+    "Name": "コハル",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "4月16日",
+    "FamilyName": "下江",
+    "CharacterVoice": "赤尾ひかる"
+  },
+  {
+    "Id": 10021,
+    "Name": "アズサ（水着）",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "12月26日",
+    "FamilyName": "白洲",
+    "CharacterVoice": "種田梨沙"
+  },
+  {
+    "Id": 20004,
+    "Name": "マシロ（水着）",
+    "School": "トリニティ",
+    "Club": "正義実現委員会",
+    "Birthday": "6月5日",
+    "FamilyName": "静山",
+    "CharacterVoice": "鬼頭明里"
+  },
+  {
+    "Id": 16005,
+    "Name": "ツルギ（水着）",
+    "School": "トリニティ",
+    "Club": "正義実現委員会",
+    "Birthday": "6月24日",
+    "FamilyName": "剣先",
+    "CharacterVoice": "小林ゆう"
+  },
+  {
+    "Id": 20005,
+    "Name": "ヒフミ（水着）",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "11月27日",
+    "FamilyName": "阿慈谷",
+    "CharacterVoice": "本渡楓"
+  },
+  {
+    "Id": 10022,
+    "Name": "ヒナ（水着）",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "2月19日",
+    "FamilyName": "空崎",
+    "CharacterVoice": "広橋涼"
+  },
+  {
+    "Id": 10023,
+    "Name": "イオリ（水着）",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "11月8日",
+    "FamilyName": "銀鏡",
+    "CharacterVoice": "佐倉綾音"
+  },
+  {
+    "Id": 16006,
+    "Name": "イズミ（水着）",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "5月11日",
+    "FamilyName": "獅子堂",
+    "CharacterVoice": "久保ユリカ"
+  },
+  {
+    "Id": 10024,
+    "Name": "シロコ（ライディング）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "5月16日",
+    "FamilyName": "砂狼",
+    "CharacterVoice": "小倉唯"
+  },
+  {
+    "Id": 10025,
+    "Name": "シュン（幼女）",
+    "School": "山海経",
+    "Club": "梅花園",
+    "Birthday": "2月5日",
+    "FamilyName": "春原",
+    "CharacterVoice": "伊藤静"
+  },
+  {
+    "Id": 13012,
+    "Name": "キリノ",
+    "School": "ヴァルキューレ",
+    "Club": "生活安全局",
+    "Birthday": "10月22日",
+    "FamilyName": "中務",
+    "CharacterVoice": "中島優衣"
+  },
+  {
+    "Id": 20006,
+    "Name": "サヤ（私服）",
+    "School": "山海経",
+    "Club": "錬丹術研究会",
+    "Birthday": "1月3日",
+    "FamilyName": "薬子",
+    "CharacterVoice": "田村ゆかり"
+  },
+  {
+    "Id": 10026,
+    "Name": "ネル（バニーガール）",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "8月17日",
+    "FamilyName": "美甘",
+    "CharacterVoice": "小清水亜美"
+  },
+  {
+    "Id": 10027,
+    "Name": "カリン（バニーガール）",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "2月2日",
+    "FamilyName": "角楯",
+    "CharacterVoice": "沼倉愛美"
+  },
+  {
+    "Id": 10028,
+    "Name": "アスナ（バニーガール）",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "3月24日",
+    "FamilyName": "一之瀬",
+    "CharacterVoice": "長谷川育美"
+  },
+  {
+    "Id": 10029,
+    "Name": "ナツ",
+    "School": "トリニティ",
+    "Club": "放課後スイーツ部",
+    "Birthday": "12月4日",
+    "FamilyName": "柚鳥",
+    "CharacterVoice": "長縄まりあ"
+  },
+  {
+    "Id": 23008,
+    "Name": "マリー",
+    "School": "トリニティ",
+    "Club": "シスターフッド",
+    "Birthday": "9月12日",
+    "FamilyName": "伊落",
+    "CharacterVoice": "小澤亜李"
+  },
+  {
+    "Id": 20007,
+    "Name": "初音ミク",
+    "School": "その他",
+    "Club": "無し",
+    "Birthday": "8月31日",
+    "FamilyName": "初音",
+    "CharacterVoice": "藤田咲"
+  },
+  {
+    "Id": 20008,
+    "Name": "アコ",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "12月22日",
+    "FamilyName": "天雨",
+    "CharacterVoice": "高野麻里佳"
+  },
+  {
+    "Id": 20009,
+    "Name": "チェリノ（温泉）",
+    "School": "レッドウィンター",
+    "Club": "レッドウィンター事務局",
+    "Birthday": "10月27日",
+    "FamilyName": "連河",
+    "CharacterVoice": "丹下桜"
+  },
+  {
+    "Id": 10030,
+    "Name": "チナツ（温泉）",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "8月22日",
+    "FamilyName": "火宮",
+    "CharacterVoice": "香月はるか"
+  },
+  {
+    "Id": 16007,
+    "Name": "トモエ",
+    "School": "レッドウィンター",
+    "Club": "レッドウィンター事務局",
+    "Birthday": "11月10日",
+    "FamilyName": "佐城",
+    "CharacterVoice": "厚木那奈美"
+  },
+  {
+    "Id": 20010,
+    "Name": "ノドカ（温泉）",
+    "School": "レッドウィンター",
+    "Club": "227号特別クラス",
+    "Birthday": "2月20日",
+    "FamilyName": "天見",
+    "CharacterVoice": "佐藤聡美"
+  },
+  {
+    "Id": 10031,
+    "Name": "アル（正月）",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "3月12日",
+    "FamilyName": "陸八魔",
+    "CharacterVoice": "近藤玲奈"
+  },
+  {
+    "Id": 10032,
+    "Name": "ムツキ（正月）",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "7月29日",
+    "FamilyName": "浅黄",
+    "CharacterVoice": "大久保瑠美"
+  },
+  {
+    "Id": 20011,
+    "Name": "セリカ（正月）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "6月25日",
+    "FamilyName": "黒見",
+    "CharacterVoice": "大橋彩香"
+  },
+  {
+    "Id": 10033,
+    "Name": "ワカモ",
+    "School": "百鬼夜行",
+    "Club": "無し",
+    "Birthday": "4月3日",
+    "FamilyName": "狐坂",
+    "CharacterVoice": "斎藤千和"
+  },
+  {
+    "Id": 16008,
+    "Name": "フブキ",
+    "School": "ヴァルキューレ",
+    "Club": "生活安全局",
+    "Birthday": "10月21日",
+    "FamilyName": "合歓垣",
+    "CharacterVoice": "平山笑美"
+  },
+  {
+    "Id": 20012,
+    "Name": "セナ",
+    "School": "ゲヘナ",
+    "Club": "救急医学部",
+    "Birthday": "4月7日",
+    "FamilyName": "氷室",
+    "CharacterVoice": "大西沙織"
+  },
+  {
+    "Id": 20013,
+    "Name": "チヒロ",
+    "School": "ミレニアム",
+    "Club": "ヴェリタス",
+    "Birthday": "4月26日",
+    "FamilyName": "各務",
+    "CharacterVoice": "山村響"
+  },
+  {
+    "Id": 10034,
+    "Name": "ミモリ",
+    "School": "百鬼夜行",
+    "Club": "修行部",
+    "Birthday": "3月15日",
+    "FamilyName": "水羽",
+    "CharacterVoice": "田中理恵"
+  },
+  {
+    "Id": 10035,
+    "Name": "ウイ",
+    "School": "トリニティ",
+    "Club": "図書委員会",
+    "Birthday": "4月23日",
+    "FamilyName": "古関",
+    "CharacterVoice": "後藤沙緒里"
+  },
+  {
+    "Id": 10036,
+    "Name": "ヒナタ",
+    "School": "トリニティ",
+    "Club": "シスターフッド",
+    "Birthday": "5月17日",
+    "FamilyName": "若葉",
+    "CharacterVoice": "日高里菜"
+  },
+  {
+    "Id": 10037,
+    "Name": "マリナ",
+    "School": "レッドウィンター",
+    "Club": "レッドウィンター事務局",
+    "Birthday": "11月4日",
+    "FamilyName": "池倉",
+    "CharacterVoice": "平井祥恵"
+  },
+  {
+    "Id": 10038,
+    "Name": "ミヤコ",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "1月7日",
+    "FamilyName": "月雪",
+    "CharacterVoice": "藤田茜"
+  },
+  {
+    "Id": 20014,
+    "Name": "サキ",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "4月9日",
+    "FamilyName": "空井",
+    "CharacterVoice": "友永朱音"
+  },
+  {
+    "Id": 10039,
+    "Name": "ミユ",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "7月12日",
+    "FamilyName": "霞沢",
+    "CharacterVoice": "後藤邑子"
+  },
+  {
+    "Id": 20015,
+    "Name": "カエデ",
+    "School": "百鬼夜行",
+    "Club": "修行部",
+    "Birthday": "7月9日",
+    "FamilyName": "勇美",
+    "CharacterVoice": "加藤英美里"
+  },
+  {
+    "Id": 20016,
+    "Name": "イロハ",
+    "School": "ゲヘナ",
+    "Club": "パンデモニウム・ソサエティー",
+    "Birthday": "11月16日",
+    "FamilyName": "棗",
+    "CharacterVoice": "福圓美里"
+  },
+  {
+    "Id": 16009,
+    "Name": "ミチル",
+    "School": "百鬼夜行",
+    "Club": "忍術研究部",
+    "Birthday": "2月22日",
+    "FamilyName": "千鳥",
+    "CharacterVoice": "水橋かおり"
+  },
+  {
+    "Id": 10040,
+    "Name": "ツクヨ",
+    "School": "百鬼夜行",
+    "Club": "忍術研究部",
+    "Birthday": "4月5日",
+    "FamilyName": "大野",
+    "CharacterVoice": "後藤彩佐"
+  },
+  {
+    "Id": 10041,
+    "Name": "ミサキ",
+    "School": "アリウス",
+    "Club": "アリウススクワッド",
+    "Birthday": "1月13日",
+    "FamilyName": "戒野",
+    "CharacterVoice": "土屋李央"
+  },
+  {
+    "Id": 20017,
+    "Name": "ヒヨリ",
+    "School": "アリウス",
+    "Club": "アリウススクワッド",
+    "Birthday": "1月8日",
+    "FamilyName": "槌永",
+    "CharacterVoice": "中原麻衣"
+  },
+  {
+    "Id": 10042,
+    "Name": "アツコ",
+    "School": "アリウス",
+    "Club": "アリウススクワッド",
+    "Birthday": "1月20日",
+    "FamilyName": "秤",
+    "CharacterVoice": "花澤香菜"
+  },
+  {
+    "Id": 10043,
+    "Name": "ワカモ（水着）",
+    "School": "百鬼夜行",
+    "Club": "無し",
+    "Birthday": "4月3日",
+    "FamilyName": "狐坂",
+    "CharacterVoice": "斎藤千和"
+  },
+  {
+    "Id": 10044,
+    "Name": "ノノミ（水着）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "9月1日",
+    "FamilyName": "十六夜",
+    "CharacterVoice": "三浦千幸"
+  },
+  {
+    "Id": 26007,
+    "Name": "アヤネ（水着）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "11月12日",
+    "FamilyName": "奥空",
+    "CharacterVoice": "原田彩楓"
+  },
+  {
+    "Id": 10045,
+    "Name": "ホシノ（水着）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "1月2日",
+    "FamilyName": "小鳥遊",
+    "CharacterVoice": "花守ゆみり"
+  },
+  {
+    "Id": 26008,
+    "Name": "シズコ（水着）",
+    "School": "百鬼夜行",
+    "Club": "お祭り運営委員会",
+    "Birthday": "7月7日",
+    "FamilyName": "河和",
+    "CharacterVoice": "森永千才"
+  },
+  {
+    "Id": 10046,
+    "Name": "イズナ（水着）",
+    "School": "百鬼夜行",
+    "Club": "忍術研究部",
+    "Birthday": "12月16日",
+    "FamilyName": "久田",
+    "CharacterVoice": "阿澄佳奈"
+  },
+  {
+    "Id": 10047,
+    "Name": "チセ（水着）",
+    "School": "百鬼夜行",
+    "Club": "陰陽部",
+    "Birthday": "7月13日",
+    "FamilyName": "和楽",
+    "CharacterVoice": "嶋村侑"
+  },
+  {
+    "Id": 10048,
+    "Name": "サオリ",
+    "School": "アリウス",
+    "Club": "アリウススクワッド",
+    "Birthday": "9月3日",
+    "FamilyName": "錠前",
+    "CharacterVoice": "石上静香"
+  },
+  {
+    "Id": 20018,
+    "Name": "モエ",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "9月13日",
+    "FamilyName": "風倉",
+    "CharacterVoice": "井澤詩織"
+  },
+  {
+    "Id": 10049,
+    "Name": "カズサ",
+    "School": "トリニティ",
+    "Club": "放課後スイーツ部",
+    "Birthday": "8月5日",
+    "FamilyName": "杏山",
+    "CharacterVoice": "夏吉ゆうこ"
+  },
+  {
+    "Id": 10050,
+    "Name": "ココナ",
+    "School": "山海経",
+    "Club": "梅花園",
+    "Birthday": "6月1日",
+    "FamilyName": "春原",
+    "CharacterVoice": "五十嵐裕美"
+  },
+  {
+    "Id": 10051,
+    "Name": "ウタハ（応援団）",
+    "School": "ミレニアム",
+    "Club": "エンジニア部",
+    "Birthday": "11月13日",
+    "FamilyName": "白石",
+    "CharacterVoice": "青地希望"
+  },
+  {
+    "Id": 10052,
+    "Name": "ノア",
+    "School": "ミレニアム",
+    "Club": "セミナー",
+    "Birthday": "4月13日",
+    "FamilyName": "生塩",
+    "CharacterVoice": "鈴代紗弓"
+  },
+  {
+    "Id": 16010,
+    "Name": "ヒビキ（応援団）",
+    "School": "ミレニアム",
+    "Club": "エンジニア部",
+    "Birthday": "4月2日",
+    "FamilyName": "猫塚",
+    "CharacterVoice": "名塚佳織"
+  },
+  {
+    "Id": 20019,
+    "Name": "アカネ（バニーガール）",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "4月1日",
+    "FamilyName": "室笠",
+    "CharacterVoice": "原由実"
+  },
+  {
+    "Id": 10053,
+    "Name": "ユウカ（体操服）",
+    "School": "ミレニアム",
+    "Club": "セミナー",
+    "Birthday": "3月14日",
+    "FamilyName": "早瀬",
+    "CharacterVoice": "春花らん"
+  },
+  {
+    "Id": 10054,
+    "Name": "マリー（体操服）",
+    "School": "トリニティ",
+    "Club": "シスターフッド",
+    "Birthday": "9月12日",
+    "FamilyName": "伊落",
+    "CharacterVoice": "小澤亜李"
+  },
+  {
+    "Id": 16011,
+    "Name": "ハスミ（体操服）",
+    "School": "トリニティ",
+    "Club": "正義実現委員会",
+    "Birthday": "12月12日",
+    "FamilyName": "羽川",
+    "CharacterVoice": "瀬戸麻沙美"
+  },
+  {
+    "Id": 20020,
+    "Name": "ヒマリ",
+    "School": "ミレニアム",
+    "Club": "特異現象捜査部",
+    "Birthday": "12月10日",
+    "FamilyName": "明星",
+    "CharacterVoice": "ゆかな"
+  },
+  {
+    "Id": 10055,
+    "Name": "シグレ",
+    "School": "レッドウィンター",
+    "Club": "227号特別クラス",
+    "Birthday": "1月22日",
+    "FamilyName": "間宵",
+    "CharacterVoice": "河瀬茉希"
+  },
+  {
+    "Id": 10056,
+    "Name": "セリナ（クリスマス）",
+    "School": "トリニティ",
+    "Club": "救護騎士団",
+    "Birthday": "1月6日",
+    "FamilyName": "鷲見",
+    "CharacterVoice": "涼本あきほ"
+  },
+  {
+    "Id": 20021,
+    "Name": "ハナエ（クリスマス）",
+    "School": "トリニティ",
+    "Club": "救護騎士団",
+    "Birthday": "5月12日",
+    "FamilyName": "朝顔",
+    "CharacterVoice": "優木かな"
+  },
+  {
+    "Id": 10057,
+    "Name": "ハルナ（正月）",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "3月1日",
+    "FamilyName": "黒舘",
+    "CharacterVoice": "田所あずさ"
+  },
+  {
+    "Id": 20022,
+    "Name": "フウカ（正月）",
+    "School": "ゲヘナ",
+    "Club": "給食部",
+    "Birthday": "4月30日",
+    "FamilyName": "愛清",
+    "CharacterVoice": "ファイルーズあい"
+  },
+  {
+    "Id": 16012,
+    "Name": "ジュンコ（正月）",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "12月27日",
+    "FamilyName": "赤司",
+    "CharacterVoice": "金元 寿子"
+  },
+  {
+    "Id": 10058,
+    "Name": "ミネ",
+    "School": "トリニティ",
+    "Club": "救護騎士団",
+    "Birthday": "11月23日",
+    "FamilyName": "蒼森",
+    "CharacterVoice": "堀江由衣"
+  },
+  {
+    "Id": 10059,
+    "Name": "ミカ",
+    "School": "トリニティ",
+    "Club": "ティーパーティー",
+    "Birthday": "5月8日",
+    "FamilyName": "聖園",
+    "CharacterVoice": "東山奈央"
+  },
+  {
+    "Id": 10060,
+    "Name": "メグ",
+    "School": "ゲヘナ",
+    "Club": "温泉開発部",
+    "Birthday": "4月25日",
+    "FamilyName": "下倉",
+    "CharacterVoice": "愛原ありさ"
+  },
+  {
+    "Id": 20023,
+    "Name": "カンナ",
+    "School": "ヴァルキューレ",
+    "Club": "公安局",
+    "Birthday": "9月7日",
+    "FamilyName": "尾刃",
+    "CharacterVoice": "松岡美里"
+  },
+  {
+    "Id": 10061,
+    "Name": "サクラコ",
+    "School": "トリニティ",
+    "Club": "シスターフッド",
+    "Birthday": "10月4日",
+    "FamilyName": "歌住",
+    "CharacterVoice": "加隈亜衣"
+  },
+  {
+    "Id": 10062,
+    "Name": "トキ",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "8月16日",
+    "FamilyName": "飛鳥馬",
+    "CharacterVoice": "石川由依"
+  },
+  {
+    "Id": 20024,
+    "Name": "ナギサ",
+    "School": "トリニティ",
+    "Club": "ティーパーティー",
+    "Birthday": "7月4日",
+    "FamilyName": "桐藤",
+    "CharacterVoice": "早見沙織"
+  },
+  {
+    "Id": 10063,
+    "Name": "コユキ",
+    "School": "ミレニアム",
+    "Club": "セミナー",
+    "Birthday": "2月14日",
+    "FamilyName": "黒崎",
+    "CharacterVoice": "乾夏寧"
+  },
+  {
+    "Id": 10064,
+    "Name": "カヨコ（正月）",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "3月17日",
+    "FamilyName": "鬼方",
+    "CharacterVoice": "藤井ゆきよ"
+  },
+  {
+    "Id": 20025,
+    "Name": "ハルカ（正月）",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "5月13日",
+    "FamilyName": "伊草",
+    "CharacterVoice": "石飛恵里花"
+  },
+  {
+    "Id": 10065,
+    "Name": "カホ",
+    "School": "百鬼夜行",
+    "Club": "陰陽部",
+    "Birthday": "10月9日",
+    "FamilyName": "桑上",
+    "CharacterVoice": "松井恵理子 "
+  },
+  {
+    "Id": 10066,
+    "Name": "アリス（メイド）",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "3月25日",
+    "FamilyName": "天童",
+    "CharacterVoice": "田中美海"
+  },
+  {
+    "Id": 10067,
+    "Name": "トキ（バニーガール）",
+    "School": "ミレニアム",
+    "Club": "Cleaning&Clearing",
+    "Birthday": "8月16日",
+    "FamilyName": "飛鳥馬",
+    "CharacterVoice": "石川由依"
+  },
+  {
+    "Id": 26009,
+    "Name": "ユズ（メイド）",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "8月12日",
+    "FamilyName": "花岡",
+    "CharacterVoice": "寺澤百花"
+  },
+  {
+    "Id": 10068,
+    "Name": "レイサ",
+    "School": "トリニティ",
+    "Club": "トリニティ自警団",
+    "Birthday": "5月31日",
+    "FamilyName": "宇沢",
+    "CharacterVoice": "根本京里"
+  },
+  {
+    "Id": 10069,
+    "Name": "ルミ",
+    "School": "山海経",
+    "Club": "玄武商会",
+    "Birthday": "3月5日",
+    "FamilyName": "朱城",
+    "CharacterVoice": "青山吉能"
+  },
+  {
+    "Id": 10070,
+    "Name": "ミナ",
+    "School": "山海経",
+    "Club": "玄竜門",
+    "Birthday": "9月9日",
+    "FamilyName": "近衛",
+    "CharacterVoice": "佐藤利奈"
+  },
+  {
+    "Id": 20026,
+    "Name": "ミノリ",
+    "School": "レッドウィンター",
+    "Club": "工務部",
+    "Birthday": "7月14日",
+    "FamilyName": "安守",
+    "CharacterVoice": "菊池紗矢香"
+  },
+  {
+    "Id": 10071,
+    "Name": "ミヤコ（水着）",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "1月7日",
+    "FamilyName": "月雪",
+    "CharacterVoice": "藤田茜"
+  },
+  {
+    "Id": 10072,
+    "Name": "サキ（水着）",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "4月9日",
+    "FamilyName": "空井",
+    "CharacterVoice": "友永朱音"
+  },
+  {
+    "Id": 26010,
+    "Name": "ミユ（水着）",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "7月12日",
+    "FamilyName": "霞沢",
+    "CharacterVoice": "後藤邑子"
+  },
+  {
+    "Id": 20027,
+    "Name": "シロコ（水着）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "5月16日",
+    "FamilyName": "砂狼",
+    "CharacterVoice": "小倉唯"
+  },
+  {
+    "Id": 10073,
+    "Name": "ウイ（水着）",
+    "School": "トリニティ",
+    "Club": "図書委員会",
+    "Birthday": "4月23日",
+    "FamilyName": "古関",
+    "CharacterVoice": "後藤沙緒里"
+  },
+  {
+    "Id": 20028,
+    "Name": "ヒナタ（水着）",
+    "School": "トリニティ",
+    "Club": "シスターフッド",
+    "Birthday": "5月17日",
+    "FamilyName": "若葉",
+    "CharacterVoice": "日高里菜"
+  },
+  {
+    "Id": 16013,
+    "Name": "コハル（水着）",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "4月16日",
+    "FamilyName": "下江",
+    "CharacterVoice": "赤尾ひかる"
+  },
+  {
+    "Id": 10074,
+    "Name": "ハナコ（水着）",
+    "School": "トリニティ",
+    "Club": "補習授業部",
+    "Birthday": "1月3日",
+    "FamilyName": "浦和",
+    "CharacterVoice": "豊田萌絵"
+  },
+  {
+    "Id": 20029,
+    "Name": "ミモリ（水着）",
+    "School": "百鬼夜行",
+    "Club": "修行部",
+    "Birthday": "3月15日",
+    "FamilyName": "水羽",
+    "CharacterVoice": "田中理恵"
+  },
+  {
+    "Id": 10075,
+    "Name": "メル",
+    "School": "レッドウィンター",
+    "Club": "知識解放戦線",
+    "Birthday": "12月21日",
+    "FamilyName": "姫木",
+    "CharacterVoice": "新井里美"
+  },
+  {
+    "Id": 13013,
+    "Name": "モミジ",
+    "School": "レッドウィンター",
+    "Club": "知識解放戦線",
+    "Birthday": "8月7日",
+    "FamilyName": "秋泉",
+    "CharacterVoice": "大亀あすか"
+  },
+  {
+    "Id": 10076,
+    "Name": "コトリ（応援団）",
+    "School": "ミレニアム",
+    "Club": "エンジニア部",
+    "Birthday": "12月31日",
+    "FamilyName": "豊見",
+    "CharacterVoice": "篠原なるみ"
+  },
+  {
+    "Id": 20030,
+    "Name": "ハルナ（体操服）",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "3月1日",
+    "FamilyName": "黒舘",
+    "CharacterVoice": "田所あずさ"
+  },
+  {
+    "Id": 10077,
+    "Name": "イチカ",
+    "School": "トリニティ",
+    "Club": "正義実現委員会",
+    "Birthday": "11月11日",
+    "FamilyName": "仲正",
+    "CharacterVoice": "鷲見友美ジェナ"
+  },
+  {
+    "Id": 10078,
+    "Name": "カスミ",
+    "School": "ゲヘナ",
+    "Club": "温泉開発部",
+    "Birthday": "5月24日",
+    "FamilyName": "鬼怒川",
+    "CharacterVoice": "上坂すみれ "
+  },
+  {
+    "Id": 20031,
+    "Name": "シグレ（温泉）",
+    "School": "レッドウィンター",
+    "Club": "227号特別クラス",
+    "Birthday": "1月22日",
+    "FamilyName": "間宵",
+    "CharacterVoice": "河瀬茉希"
+  },
+  {
+    "Id": 10079,
+    "Name": "御坂美琴",
+    "School": "常盤台中学",
+    "Club": "無し",
+    "Birthday": "5月2日",
+    "FamilyName": "御坂",
+    "CharacterVoice": "佐藤利奈"
+  },
+  {
+    "Id": 10080,
+    "Name": "食蜂操祈",
+    "School": "常盤台中学",
+    "Club": "無し",
+    "Birthday": "-",
+    "FamilyName": "食蜂",
+    "CharacterVoice": "浅倉杏美"
+  },
+  {
+    "Id": 26011,
+    "Name": "佐天涙子",
+    "School": "柵川中学",
+    "Club": "無し",
+    "Birthday": "-",
+    "FamilyName": "佐天",
+    "CharacterVoice": "伊藤かな恵"
+  },
+  {
+    "Id": 10081,
+    "Name": "ユカリ",
+    "School": "百鬼夜行",
+    "Club": "百花繚乱紛争調停委員会",
+    "Birthday": "6月16日",
+    "FamilyName": "勘解由小路",
+    "CharacterVoice": "村上まなつ"
+  },
+  {
+    "Id": 10082,
+    "Name": "レンゲ",
+    "School": "百鬼夜行",
+    "Club": "百花繚乱紛争調停委員会",
+    "Birthday": "7月23日",
+    "FamilyName": "不破",
+    "CharacterVoice": "小市眞琴"
+  },
+  {
+    "Id": 10083,
+    "Name": "キキョウ",
+    "School": "百鬼夜行",
+    "Club": "百花繚乱紛争調停委員会",
+    "Birthday": "8月8日",
+    "FamilyName": "桐生",
+    "CharacterVoice": "小松未可子"
+  },
+  {
+    "Id": 20032,
+    "Name": "エイミ（水着）",
+    "School": "ミレニアム",
+    "Club": "特異現象捜査部",
+    "Birthday": "5月1日",
+    "FamilyName": "和泉元",
+    "CharacterVoice": "松永あかね"
+  },
+  {
+    "Id": 10084,
+    "Name": "コタマ（キャンプ）",
+    "School": "ミレニアム",
+    "Club": "ヴェリタス",
+    "Birthday": "1月5日",
+    "FamilyName": "音瀬",
+    "CharacterVoice": "高川みな"
+  },
+  {
+    "Id": 10085,
+    "Name": "ハレ（キャンプ）",
+    "School": "ミレニアム",
+    "Club": "ヴェリタス",
+    "Birthday": "4月19日",
+    "FamilyName": "小鈎",
+    "CharacterVoice": "貝原怜奈"
+  },
+  {
+    "Id": 10087,
+    "Name": "アコ（ドレス）",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "12月22日",
+    "FamilyName": "天雨",
+    "CharacterVoice": "高野麻里佳"
+  },
+  {
+    "Id": 16014,
+    "Name": "イブキ",
+    "School": "ゲヘナ",
+    "Club": "パンデモニウム・ソサエティー",
+    "Birthday": "4月14日",
+    "FamilyName": "丹花",
+    "CharacterVoice": "春瀬なつみ"
+  },
+  {
+    "Id": 20033,
+    "Name": "マコト",
+    "School": "ゲヘナ",
+    "Club": "パンデモニウム・ソサエティー",
+    "Birthday": "3月19日",
+    "FamilyName": "羽沼",
+    "CharacterVoice": "浅川悠"
+  },
+  {
+    "Id": 10086,
+    "Name": "ヒナ（ドレス）",
+    "School": "ゲヘナ",
+    "Club": "風紀委員会",
+    "Birthday": "2月19日",
+    "FamilyName": "空崎",
+    "CharacterVoice": "広橋涼"
+  },
+  {
+    "Id": 10088,
+    "Name": "カヨコ（ドレス）",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "3月17日",
+    "FamilyName": "鬼方",
+    "CharacterVoice": "藤井ゆきよ"
+  },
+  {
+    "Id": 10089,
+    "Name": "アル（ドレス）",
+    "School": "ゲヘナ",
+    "Club": "便利屋68",
+    "Birthday": "3月12日",
+    "FamilyName": "陸八魔",
+    "CharacterVoice": "近藤玲奈"
+  },
+  {
+    "Id": 20034,
+    "Name": "アカリ（正月）",
+    "School": "ゲヘナ",
+    "Club": "美食研究会",
+    "Birthday": "12月9日",
+    "FamilyName": "鰐渕",
+    "CharacterVoice": "森嶋優花"
+  },
+  {
+    "Id": 10090,
+    "Name": "ウミカ",
+    "School": "百鬼夜行",
+    "Club": "お祭り運営委員会",
+    "Birthday": " 7月1日",
+    "FamilyName": "里浜",
+    "CharacterVoice": "新田ひより"
+  },
+  {
+    "Id": 20035,
+    "Name": "ツバキ（ガイド）",
+    "School": "百鬼夜行",
+    "Club": "修行部",
+    "Birthday": " 2月3日",
+    "FamilyName": "春日",
+    "CharacterVoice": "白砂沙帆"
+  },
+  {
+    "Id": 10091,
+    "Name": "カズサ（バンド）",
+    "School": "トリニティ",
+    "Club": "放課後スイーツ部",
+    "Birthday": "8月5日",
+    "FamilyName": "杏山",
+    "CharacterVoice": "夏吉ゆうこ"
+  },
+  {
+    "Id": 10092,
+    "Name": "ヨシミ（バンド）",
+    "School": "トリニティ",
+    "Club": "放課後スイーツ部",
+    "Birthday": "8月29日",
+    "FamilyName": "伊原木",
+    "CharacterVoice": "真野あゆみ"
+  },
+  {
+    "Id": 16015,
+    "Name": "アイリ（バンド）",
+    "School": "トリニティ",
+    "Club": "放課後スイーツ部",
+    "Birthday": "1月30日",
+    "FamilyName": "栗村",
+    "CharacterVoice": "水森ちこ"
+  },
+  {
+    "Id": 10093,
+    "Name": "キララ",
+    "School": "ゲヘナ",
+    "Club": "キラキラ部",
+    "Birthday": "2月24日",
+    "FamilyName": "夜桜",
+    "CharacterVoice": "山下七海"
+  },
+  {
+    "Id": 10094,
+    "Name": "モモイ（メイド）",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "12月8日",
+    "FamilyName": "才羽",
+    "CharacterVoice": "徳井青空"
+  },
+  {
+    "Id": 10095,
+    "Name": "ミドリ（メイド）",
+    "School": "ミレニアム",
+    "Club": "ゲーム開発部",
+    "Birthday": "12月8日",
+    "FamilyName": "才羽",
+    "CharacterVoice": "高田憂希"
+  },
+  {
+    "Id": 20036,
+    "Name": "セリカ（水着）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "6月25日",
+    "FamilyName": "黒見",
+    "CharacterVoice": "大橋彩香"
+  },
+  {
+    "Id": 10096,
+    "Name": "カンナ（水着）",
+    "School": "ヴァルキューレ",
+    "Club": "公安局",
+    "Birthday": "9月7日",
+    "FamilyName": "尾刃",
+    "CharacterVoice": "松岡美里"
+  },
+  {
+    "Id": 20037,
+    "Name": "フブキ（水着）",
+    "School": "ヴァルキューレ",
+    "Club": "生活安全局",
+    "Birthday": "10月21日",
+    "FamilyName": "合歓垣",
+    "CharacterVoice": "平山笑美"
+  },
+  {
+    "Id": 26012,
+    "Name": "キリノ（水着）",
+    "School": "ヴァルキューレ",
+    "Club": "生活安全局",
+    "Birthday": "10月22日",
+    "FamilyName": "中務",
+    "CharacterVoice": "中島優衣"
+  },
+  {
+    "Id": 10097,
+    "Name": "モエ（水着）",
+    "School": "SRT",
+    "Club": "RABBIT小隊",
+    "Birthday": "9月13日",
+    "FamilyName": "風倉",
+    "CharacterVoice": "井澤詩織"
+  },
+  {
+    "Id": 10098,
+    "Name": "ホシノ（臨戦）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "1月2日",
+    "FamilyName": "小鳥遊",
+    "CharacterVoice": "花守ゆみり"
+  },
+  {
+    "Id": 10099,
+    "Name": "ホシノ（臨戦）",
+    "School": "アビドス",
+    "Club": "対策委員会",
+    "Birthday": "1月2日",
+    "FamilyName": "小鳥遊",
+    "CharacterVoice": "花守ゆみり"
+  },
+  {
+    "Id": 10100,
+    "Name": "シロコ＊テラー",
+    "School": "アビドス",
+    "Club": "アビドス生徒会",
+    "Birthday": "5月16日",
+    "FamilyName": "砂狼",
+    "CharacterVoice": "小倉唯"
+  },
+  {
+    "Id": 26013,
+    "Name": "アツコ（水着）",
+    "School": "アリウス",
+    "Club": "アリウススクワッド",
+    "Birthday": "1月20日",
+    "FamilyName": "秤",
+    "CharacterVoice": "花澤香菜"
+  },
+  {
+    "Id": 10101,
+    "Name": "サオリ（水着）",
+    "School": "アリウス",
+    "Club": "アリウススクワッド",
+    "Birthday": "9月3日",
+    "FamilyName": "錠前",
+    "CharacterVoice": "石上静香"
+  },
+  {
+    "Id": 10102,
+    "Name": "ヒヨリ（水着）",
+    "School": "アリウス",
+    "Club": "アリウススクワッド",
+    "Birthday": "1月8日",
+    "FamilyName": "槌永",
+    "CharacterVoice": "中原麻衣"
+  }
+]

@@ -26,6 +26,6 @@ dist-ssr
 # custom
 .gemini
 memory
-scripts
+scripts/*.sh
 specs
 templates
