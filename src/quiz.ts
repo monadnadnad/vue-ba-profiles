@@ -1,5 +1,4 @@
-import cvs from "./data/cvs.json";
-import schools from "./data/schools.json";
+import students from "./data/students.json";
 import type { Student } from "./types";
 
 export type QuizKey = Exclude<keyof Student, "Id">;
@@ -16,19 +15,24 @@ export interface Quiz<T extends QuizKey = QuizKey> {
 const normalize = (val: unknown, unit = "") =>
   String(val).trim().toLowerCase().replace(/\s+/g, " ").replace(new RegExp(unit, "g"), "");
 
+const getOptions = (key: QuizKey): string[] => {
+  const allValues = students.flatMap((s) => s[key]?.toString() ?? []);
+  return [...new Set(allValues)].filter(Boolean).sort((a, b) => a.localeCompare(b, "ja"));
+};
+
 export const quizzes: Quiz[] = [
   {
     key: "School",
     label: "学園",
     type: "autocomplete",
-    options: schools,
+    options: getOptions("School"),
     evaluate: (ans, cor) => (normalize(ans) === normalize(cor) ? "correct" : "incorrect"),
   },
   {
     key: "CharacterVoice",
     label: "声優",
     type: "autocomplete",
-    options: cvs,
+    options: getOptions("CharacterVoice"),
     evaluate: (ans, cor) => (normalize(ans) === normalize(cor) ? "correct" : "incorrect"),
   },
   {
@@ -54,6 +58,13 @@ export const quizzes: Quiz[] = [
     label: "誕生日",
     type: "text",
     evaluate: (ans, cor) => (normalize(ans, "日") === normalize(cor, "日") ? "correct" : "incorrect"),
+  },
+  {
+    key: "Hobby",
+    label: "趣味",
+    type: "autocomplete",
+    options: getOptions("Hobby"),
+    evaluate: (ans, cor) => (normalize(ans) === normalize(cor) ? "correct" : "incorrect"),
   },
 ];
 
