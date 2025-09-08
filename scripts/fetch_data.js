@@ -35,14 +35,6 @@ const run = async () => {
       const dict = l10n && typeof l10n[k] === "object" ? l10n[k] : null;
       if (dict) o[k] = mapByDict(o[k], dict);
     }
-    if (o.BirthDay && o.BirthDay !== "-") {
-      const [month, day] = o.BirthDay.split("/");
-      o.BirthDayMM = month;
-      o.BirthDayDD = day;
-    } else {
-      o.BirthDayMM = null;
-      o.BirthDayDD = null;
-    }
     return o;
   });
 
