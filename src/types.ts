@@ -13,7 +13,8 @@ export interface Student {
   CharHeightMetric: string;
 }
 
-export type QuizableKey = "BirthDay" | "School" | "CharacterVoice" | "CharHeightMetric";
+export type ProfileKey = Exclude<keyof Student, "Id" | "Name" | "FamilyName" | "FamilyNameRuby">;
+export type QuizableKey = "BirthDay" | "Hobby" | "CharacterVoice" | "CharHeightMetric" | "CharacterAge";
 export type QuizInputType = "text" | "autocomplete";
 export type QuizResult = "correct" | "incorrect";
 export type QuizPrefs = Partial<Record<QuizableKey, boolean>>;

@@ -1,14 +1,22 @@
 <template>
   <v-app>
+    <v-navigation-drawer permanent>
+      <v-list>
+        <v-list-subheader>穴埋めの設定</v-list-subheader>
+        <v-list-item v-for="pref in quizableItems" :key="pref.key">
+          <v-switch
+            v-model="quizPrefs[pref.key]"
+            :label="pref.label"
+            color="primary"
+            class="px-4"
+            hide-details
+          ></v-switch>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
     <v-main>
       <v-container>
-        <ProfileCard
-          v-if="currentStudent"
-          :key="currentStudent.Id"
-          :student="currentStudent"
-          :all-students="students"
-          :quiz-prefs="quizPrefs"
-        />
+        <ProfileCard v-if="currentStudent" :key="currentStudent.Id" :student="currentStudent" :quiz-prefs="quizPrefs" />
         <div class="d-flex justify-end mt-4">
           <v-btn color="secondary" @click="nextStudent">次の生徒へ</v-btn>
         </div>
@@ -21,11 +29,19 @@
   import { onMounted, ref } from "vue";
   import ProfileCard from "./components/ProfileCard.vue";
   import studentsData from "./data/students.json";
-  import { defaultQuizPrefs, type QuizPrefs, type Student } from "./types";
+  import { defaultQuizPrefs, type QuizableKey, type QuizPrefs, type Student } from "./types";
+  import { keyToLabel } from "./utils";
 
   const students = studentsData as Student[];
   const currentStudent = ref<Student | null>(null);
   const quizPrefs = ref<QuizPrefs>(defaultQuizPrefs);
+  const quizableItems: { key: QuizableKey; label: string }[] = [
+    { key: "CharacterAge", label: keyToLabel["CharacterAge"] },
+    { key: "CharHeightMetric", label: keyToLabel["CharHeightMetric"] },
+    { key: "BirthDay", label: keyToLabel["BirthDay"] },
+    { key: "Hobby", label: keyToLabel["Hobby"] },
+    { key: "CharacterVoice", label: keyToLabel["CharacterVoice"] },
+  ];
 
   const nextStudent = () => {
     currentStudent.value = students[Math.floor(Math.random() * students.length)];

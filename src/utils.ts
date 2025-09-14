@@ -1,7 +1,7 @@
 import allStudentsData from "./data/students.json";
-import type { Quiz, QuizableKey, Student } from "./types";
+import type { ProfileKey, Quiz, QuizableKey, Student } from "./types";
 
-export const keyToLabel: Partial<Record<keyof Student, string>> = {
+export const keyToLabel: Record<ProfileKey, string> = {
   School: "学校",
   SchoolYear: "学年",
   Club: "部活動",
@@ -15,7 +15,9 @@ export const keyToLabel: Partial<Record<keyof Student, string>> = {
 const students = allStudentsData as Student[];
 const createChoices = (key: QuizableKey): string[] => {
   const values = students.map((s) => s[key]).filter(Boolean);
-  return [...new Set(values)];
+  const dedup = new Set(values);
+  const sorted = Array.from(dedup).sort((a, b) => (a && b ? a.localeCompare(b) : 0));
+  return sorted;
 };
 
 export function makeQuiz(st: Student, key: QuizableKey): Quiz | null {

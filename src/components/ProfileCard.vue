@@ -40,8 +40,8 @@
 </template>
 
 <script setup lang="ts">
-  import { computed, ref } from "vue";
-  import type { QuizableKey, QuizPrefs, QuizResult, Student } from "../types";
+  import { computed, ref, watch } from "vue";
+  import type { ProfileKey, Quiz, QuizableKey, QuizPrefs, QuizResult, Student } from "../types";
   import { keyToLabel, makeQuiz } from "../utils";
   import QuizChoice from "./QuizChoice.vue";
   import QuizMmdd from "./QuizMmdd.vue";
@@ -57,24 +57,37 @@
   const iconUrl = computed(
     () => `https://raw.githubusercontent.com/SchaleDB/SchaleDB/main/images/student/icon/${props.student.Id}.webp`
   );
-  const displayKeys: Array<keyof Student> = [
+  const displayKeys: Array<ProfileKey> = [
     "School",
     "SchoolYear",
     "Club",
+    "CharacterAge",
     "BirthDay",
     "CharHeightMetric",
     "Hobby",
-    "CharacterAge",
     "CharacterVoice",
   ];
 
-  const profileItems = ref(
-    displayKeys.map((key) => ({
-      key: key,
-      label: keyToLabel[key] || key,
-      value: props.student[key] || "-",
-      quiz: props.quizPrefs[key as QuizableKey] ? makeQuiz(props.student, key as QuizableKey) : null,
-    }))
+  type ProfileItem = {
+    key: ProfileKey;
+    label: string;
+    value: string;
+    quiz: Quiz | null;
+  };
+  const profileItems = ref<ProfileItem[]>([]);
+  watch(
+    () => [props.student, props.quizPrefs],
+    () => {
+      profileItems.value = displayKeys.map((key) => ({
+        key: key,
+        label: keyToLabel[key as QuizableKey],
+        value: props.student[key],
+        quiz: props.quizPrefs[key as QuizableKey] ? makeQuiz(props.student, key as QuizableKey) : null,
+      }));
+      isSubmitted.value = false;
+      results.value = {};
+    },
+    { immediate: true, deep: true }
   );
 
   const hasQuiz = computed(() => profileItems.value.some((item) => item.quiz));
