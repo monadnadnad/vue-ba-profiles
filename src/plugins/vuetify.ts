@@ -11,8 +11,6 @@ const theme = {
     surface: "#FFFFFF",
     primary: "#FF6EA1",
     secondary: "#5E97F6",
-    "primary-darken-1": "#E56290",
-    "secondary-darken-1": "#3C6EBE",
     error: "#B00020",
     info: "#2196F3",
     success: "#4CAF50",
