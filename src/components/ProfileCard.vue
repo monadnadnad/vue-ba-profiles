@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card elevation="0">
     <v-card-title>
       <v-avatar :image="iconUrl" class="mr-4" />
       {{ student.FamilyName + student.Name }}
@@ -34,7 +34,7 @@
     </v-card-text>
 
     <v-card-actions class="justify-end">
-      <v-btn v-if="hasQuiz && !isSubmitted" color="primary" @click="checkAnswers">回答する</v-btn>
+      <v-btn v-if="hasQuiz && !isSubmitted" variant="elevated" color="primary" @click="checkAnswers">回答する</v-btn>
     </v-card-actions>
   </v-card>
 </template>

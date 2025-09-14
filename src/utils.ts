@@ -2,7 +2,7 @@ import allStudentsData from "./data/students.json";
 import type { ProfileKey, Quiz, QuizableKey, Student } from "./types";
 
 export const keyToLabel: Record<ProfileKey, string> = {
-  School: "学校",
+  School: "学園",
   SchoolYear: "学年",
   Club: "部活動",
   BirthDay: "誕生日",

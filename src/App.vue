@@ -1,8 +1,11 @@
 <template>
   <v-app>
+    <v-app-bar color="primary" density="compact" elevation="0">
+      <v-app-bar-title> ブルアカの生徒プロフィールを暗記する </v-app-bar-title>
+    </v-app-bar>
     <v-navigation-drawer permanent>
       <v-list>
-        <v-list-subheader>穴埋めの設定</v-list-subheader>
+        <v-list-subheader>穴埋めON/OFF</v-list-subheader>
         <v-list-item v-for="pref in quizableItems" :key="pref.key">
           <v-switch
             v-model="quizPrefs[pref.key]"
@@ -18,7 +21,7 @@
       <v-container>
         <ProfileCard v-if="currentStudent" :key="currentStudent.Id" :student="currentStudent" :quiz-prefs="quizPrefs" />
         <div class="d-flex justify-end mt-4">
-          <v-btn color="secondary" @click="nextStudent">次の生徒へ</v-btn>
+          <v-btn color="primary" @click="nextStudent">次の生徒へ</v-btn>
         </div>
       </v-container>
     </v-main>
