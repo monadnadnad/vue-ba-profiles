@@ -17,24 +17,10 @@ export type QuizableKey = "BirthDay" | "School" | "CharacterVoice" | "CharHeight
 export type QuizInputType = "text" | "autocomplete";
 export type QuizResult = "correct" | "incorrect";
 export type QuizPrefs = Partial<Record<QuizableKey, boolean>>;
-
 export const defaultQuizPrefs: QuizPrefs = {
   BirthDay: true,
   CharacterVoice: true,
   CharHeightMetric: true,
-};
-
-export type FillInQuiz<K extends QuizableKey = QuizableKey> = {
-  type: "fill-in";
-  key: K;
-  answer: string;
-};
-
-export type ChoiceQuiz<K extends QuizableKey = QuizableKey> = {
-  type: "choice";
-  key: K;
-  choices: string[];
-  answer: string;
 };
 
 export type MMDDQuiz = {
@@ -42,6 +28,16 @@ export type MMDDQuiz = {
   key: "BirthDay";
   answerMM: string;
   answerDD: string;
+  userMM: string;
+  userDD: string;
 };
 
-export type Quiz = FillInQuiz | ChoiceQuiz | MMDDQuiz;
+export type ChoiceQuiz = {
+  type: "choice";
+  key: QuizableKey;
+  choices: string[];
+  answer: string;
+  userChoice: string | null;
+};
+
+export type Quiz = MMDDQuiz | ChoiceQuiz;
