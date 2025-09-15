@@ -1,6 +1,8 @@
+import { mdiMenu } from "@mdi/js";
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
+import { mdi } from "vuetify/iconsets/mdi-svg";
 // @ts-expect-error -- side effects import
 import "vuetify/styles";
 
@@ -21,6 +23,15 @@ const theme = {
 const vuetify = createVuetify({
   components,
   directives,
+  icons: {
+    defaultSet: "mdi",
+    aliases: {
+      menu: mdiMenu,
+    },
+    sets: {
+      mdi,
+    },
+  },
   theme: {
     defaultTheme: "theme",
     themes: {

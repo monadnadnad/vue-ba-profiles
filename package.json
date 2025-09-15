@@ -12,6 +12,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
     "vue": "^3.5.18",
     "vuetify": "^3.9.7"
   },

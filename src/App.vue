@@ -1,9 +1,10 @@
 <template>
   <v-app>
     <v-app-bar color="primary" density="compact" elevation="0">
-      <v-app-bar-title> ブルアカの生徒プロフィールを暗記する </v-app-bar-title>
+      <v-app-bar-nav-icon @click="showDrawer = !showDrawer"></v-app-bar-nav-icon>
+      <v-app-bar-title> ブルアカの生徒を暗記する </v-app-bar-title>
     </v-app-bar>
-    <v-navigation-drawer permanent>
+    <v-navigation-drawer v-model="showDrawer">
       <v-list>
         <v-list-subheader>穴埋めON/OFF</v-list-subheader>
         <v-list-item v-for="pref in quizableItems" :key="pref.key">
@@ -25,9 +26,9 @@
         </div>
       </v-container>
     </v-main>
-    <v-footer app class="pa-2">
+    <v-footer class="pa-2 border-t" color="background">
       <div class="w-100 text-center text-caption text-medium-emphasis opacity-60">
-        <p class="ma-0">本サイトはNexon Games Co., Ltd.、株式会社Yostarとは一切関係ありません。</p>
+        <p class="ma-0">本サイトはNexon Games Co., Ltd.、株式会社Yostarとは関係ありません。</p>
         <p class="ma-0">
           データは
           <a href="https://github.com/SchaleDB/SchaleDB" target="_blank" rel="noopener noreferrer"> SchaleDB </a>
@@ -45,6 +46,7 @@
   import { defaultQuizPrefs, type QuizableKey, type QuizPrefs, type Student } from "./types";
   import { keyToLabel } from "./utils";
 
+  const showDrawer = ref(false);
   const students = studentsData as Student[];
   const currentStudent = ref<Student | null>(null);
   const quizPrefs = ref<QuizPrefs>(defaultQuizPrefs);
