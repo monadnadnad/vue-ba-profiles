@@ -25,6 +25,16 @@
         </div>
       </v-container>
     </v-main>
+    <v-footer app class="pa-2">
+      <div class="w-100 text-center text-caption text-medium-emphasis opacity-60">
+        <p class="ma-0">本サイトはNexon Games Co., Ltd.、株式会社Yostarとは一切関係ありません。</p>
+        <p class="ma-0">
+          データは
+          <a href="https://github.com/SchaleDB/SchaleDB" target="_blank" rel="noopener noreferrer"> SchaleDB </a>
+          様のものを使用しています。
+        </p>
+      </div>
+    </v-footer>
   </v-app>
 </template>
 

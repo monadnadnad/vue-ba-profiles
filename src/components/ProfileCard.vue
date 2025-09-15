@@ -9,7 +9,9 @@
       <v-row dense>
         <v-col v-for="item in profileItems" :key="item.key" cols="12" md="6">
           <div class="d-flex align-center" style="min-height: 56px">
-            <strong class="mr-2" style="flex: 0 0 80px">{{ item.label }}:</strong>
+            <v-chip color="primary" class="mr-4 justify-center" style="flex: 0 0 80px">
+              {{ item.label }}
+            </v-chip>
 
             <div v-if="item.quiz && !isSubmitted" class="flex-grow-1" :class="widthClass(item.key)">
               <QuizChoice v-if="item.quiz.type === 'choice'" v-model="item.quiz" :items="item.quiz.choices" />
