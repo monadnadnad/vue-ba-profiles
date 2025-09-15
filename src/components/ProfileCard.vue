@@ -1,15 +1,17 @@
 <template>
   <v-card elevation="0">
-    <v-card-title>
-      <v-avatar :image="iconUrl" class="mr-4" />
-      {{ student.FamilyName + student.Name }}
+    <v-card-title class="d-flex align-center pa-4">
+      <v-avatar :image="iconUrl" class="mr-4" size="64" />
+      <div class="text-h6 font-weight-bold">
+        {{ student.FamilyName + student.Name }}
+      </div>
     </v-card-title>
-
+    <v-divider class="my-2" />
     <v-card-text>
       <v-row dense>
         <v-col v-for="item in profileItems" :key="item.key" cols="12" md="6">
           <div class="d-flex align-center" style="min-height: 56px">
-            <v-chip color="primary" class="mr-4 justify-center" style="flex: 0 0 80px">
+            <v-chip color="primary" class="mr-4 justify-center" style="flex: 0 0 70px">
               {{ item.label }}
             </v-chip>
 
@@ -20,7 +22,6 @@
 
             <div v-else class="d-flex align-center flex-grow-1">
               <span class="mr-2">{{ item.value }}</span>
-
               <v-chip
                 v-if="isSubmitted && item.quiz"
                 :color="results[item.key] === 'correct' ? 'success' : 'error'"
