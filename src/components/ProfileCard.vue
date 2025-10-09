@@ -9,31 +9,33 @@
     <v-divider class="my-2" />
     <v-card-text>
       <v-row dense>
-        <v-col v-for="item in profileItems" :key="item.key" cols="12" md="6">
-          <div class="d-flex align-center" style="min-height: 42px">
+        <v-col v-for="item in profileItems" :key="item.key" class="pa-md-2" cols="12" md="6">
+          <div class="d-flex align-center">
             <v-chip color="primary" class="mr-4 justify-center" style="flex: 0 0 70px">
               {{ item.label }}
             </v-chip>
-
-            <div
-              v-if="!isSubmitted && item.quiz && quizPrefs[item.key as QuizableKey]"
-              class="flex-grow-1"
-              :class="widthClass(item.key)"
-            >
-              <QuizChoice v-if="item.quiz.type === 'choice'" v-model="item.quiz" :items="item.quiz.choices" />
-              <QuizMmdd v-else-if="item.quiz.type === 'mmdd'" v-model="item.quiz" />
-            </div>
-            <div v-else class="d-flex align-center flex-grow-1">
-              <span class="mr-2">{{ item.value }}</span>
-              <v-chip
-                v-if="item.quiz"
-                class="ml-2"
-                :color="results[item.key as QuizableKey] === 'correct' ? 'success' : 'error'"
-                variant="flat"
-                size="small"
-              >
-                {{ results[item.key as QuizableKey] === "correct" ? "正解" : "不正解" }}
-              </v-chip>
+            <div class="flex-grow-1">
+              <template v-if="!isSubmitted && item.quiz && quizPrefs[item.key as QuizableKey]">
+                <QuizChoice
+                  v-if="item.quiz.type === 'choice'"
+                  v-model="item.quiz"
+                  :items="item.quiz.choices"
+                  :class="widthClass(item.key)"
+                />
+                <QuizMmdd v-else-if="item.quiz.type === 'mmdd'" v-model="item.quiz" class="input-short" />
+              </template>
+              <template v-else>
+                <span class="mr-2">{{ item.value }}</span>
+                <v-chip
+                  v-if="item.quiz"
+                  class="ml-2"
+                  :color="results[item.key as QuizableKey] === 'correct' ? 'success' : 'error'"
+                  variant="flat"
+                  size="small"
+                >
+                  {{ results[item.key as QuizableKey] === "correct" ? "正解" : "不正解" }}
+                </v-chip>
+              </template>
             </div>
           </div>
         </v-col>
@@ -99,8 +101,7 @@ watch(
 );
 
 const hasQuiz = computed(() => profileItems.value.some((item) => item.quiz));
-const widthClass = (key: string) =>
-  ["CharHeightMetric", "CharacterAge", "BirthDay"].includes(key) ? "input-short" : "";
+const widthClass = (key: string) => (["CharHeightMetric", "CharacterAge"].includes(key) ? "input-short" : "input-long");
 
 function checkAnswers() {
   profileItems.value.forEach(({ key, quiz }) => {
@@ -118,6 +119,10 @@ function checkAnswers() {
 
 <style scoped>
 .input-short {
-  max-width: 160px;
+  max-width: clamp(120px, 20vw, 160px);
+}
+
+.input-long {
+  max-width: clamp(240px, 40vw, 320px);
 }
 </style>
