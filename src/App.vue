@@ -40,27 +40,35 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted, ref } from "vue";
-  import ProfileCard from "./components/ProfileCard.vue";
-  import studentsData from "./data/students.json";
-  import { defaultQuizPrefs, type QuizableKey, type QuizPrefs, type Student } from "./types";
-  import { keyToLabel } from "./utils";
+import { onMounted, ref } from "vue";
+import ProfileCard from "./components/ProfileCard.vue";
+import studentsData from "./data/students.json";
+import type { QuizableKey, QuizPrefs, Student } from "./types";
+import { keyToLabel } from "./utils";
 
-  const showDrawer = ref(false);
-  const students = studentsData as Student[];
-  const currentStudent = ref<Student | null>(null);
-  const quizPrefs = ref<QuizPrefs>(defaultQuizPrefs);
-  const quizableItems: { key: QuizableKey; label: string }[] = [
-    { key: "CharacterAge", label: keyToLabel["CharacterAge"] },
-    { key: "CharHeightMetric", label: keyToLabel["CharHeightMetric"] },
-    { key: "BirthDay", label: keyToLabel["BirthDay"] },
-    { key: "Hobby", label: keyToLabel["Hobby"] },
-    { key: "CharacterVoice", label: keyToLabel["CharacterVoice"] },
-  ];
+const defaultQuizPrefs: QuizPrefs = {
+  BirthDay: true,
+  CharacterVoice: true,
+  CharacterAge: false,
+  CharHeightMetric: true,
+  Hobby: false,
+};
+const students = studentsData as Student[];
 
-  const nextStudent = () => {
-    currentStudent.value = students[Math.floor(Math.random() * students.length)];
-  };
+const showDrawer = ref(false);
+const currentStudent = ref<Student | null>(null);
+const quizPrefs = ref<QuizPrefs>(defaultQuizPrefs);
+const quizableItems: { key: QuizableKey; label: string }[] = [
+  { key: "CharacterAge", label: keyToLabel["CharacterAge"] },
+  { key: "CharHeightMetric", label: keyToLabel["CharHeightMetric"] },
+  { key: "BirthDay", label: keyToLabel["BirthDay"] },
+  { key: "Hobby", label: keyToLabel["Hobby"] },
+  { key: "CharacterVoice", label: keyToLabel["CharacterVoice"] },
+];
 
-  onMounted(nextStudent);
+function nextStudent() {
+  currentStudent.value = students[Math.floor(Math.random() * students.length)];
+}
+
+onMounted(nextStudent);
 </script>

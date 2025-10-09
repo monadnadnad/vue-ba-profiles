@@ -1,7 +1,7 @@
 import allStudentsData from "./data/students.json";
-import type { ProfileKey, Quiz, QuizableKey, Student } from "./types";
+import type { KeyToLabel, QuizableKey, QuizFor, Student } from "./types";
 
-export const keyToLabel: Record<ProfileKey, string> = {
+export const keyToLabel: KeyToLabel = {
   School: "学園",
   SchoolYear: "学年",
   Club: "部活動",
@@ -20,13 +20,14 @@ const createChoices = (key: QuizableKey): string[] => {
   return sorted;
 };
 
-export function makeQuiz(st: Student, key: QuizableKey): Quiz | null {
+export function makeQuiz<K extends QuizableKey>(st: Student, key: K): QuizFor<K> | undefined {
   const answer = st[key];
-  if (!answer || answer === "-") return null;
+  if (!answer || answer === "-") return undefined;
 
   if (key === "BirthDay") {
-    const [mm, dd] = (/^(\d{1,2})\/(\d{1,2})$/.exec(answer) ?? []).slice(1);
-    if (!mm || !dd) return null;
+    const m = /^(\d{1,2})\/(\d{1,2})$/.exec(String(answer));
+    if (!m) return undefined;
+    const [, mm, dd] = m;
     return {
       type: "mmdd",
       key,
@@ -34,14 +35,14 @@ export function makeQuiz(st: Student, key: QuizableKey): Quiz | null {
       answerDD: dd,
       userMM: "",
       userDD: "",
-    };
+    } as QuizFor<K>;
   }
 
   return {
     type: "choice",
     key,
     answer: String(answer),
-    choices: createChoices(key),
+    choices: createChoices(key as Exclude<K, "BirthDay">),
     userChoice: null,
-  };
+  } as QuizFor<K>;
 }

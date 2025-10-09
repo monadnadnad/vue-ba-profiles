@@ -14,31 +14,35 @@ export interface Student {
 }
 
 export type ProfileKey = Exclude<keyof Student, "Id" | "Name" | "FamilyName" | "FamilyNameRuby">;
-export type QuizableKey = "BirthDay" | "Hobby" | "CharacterVoice" | "CharHeightMetric" | "CharacterAge";
-export type QuizInputType = "text" | "autocomplete";
-export type QuizResult = "correct" | "incorrect";
-export type QuizPrefs = Partial<Record<QuizableKey, boolean>>;
-export const defaultQuizPrefs: QuizPrefs = {
-  BirthDay: true,
-  CharacterVoice: true,
-  CharHeightMetric: true,
+export type KeyToLabel = Record<ProfileKey, string>;
+export type ProfileItem<T extends ProfileKey = ProfileKey> = {
+  key: T;
+  label: KeyToLabel[T];
+  value: Student[T];
+  quiz?: T extends QuizableKey ? QuizFor<T & QuizableKey> : undefined;
 };
 
+export type QuizableKey = "BirthDay" | "Hobby" | "CharacterVoice" | "CharHeightMetric" | "CharacterAge";
+export type QuizResult = "correct" | "incorrect";
+export type QuizFor<K extends QuizableKey> = K extends "BirthDay" ? MMDDQuiz : ChoiceQuiz;
+export type QuizPrefs = Record<QuizableKey, boolean>;
+
 export type MMDDQuiz = {
-  type: "mmdd";
-  key: "BirthDay";
+  readonly type: "mmdd";
+  readonly key: "BirthDay";
   answerMM: string;
   answerDD: string;
   userMM: string;
   userDD: string;
 };
 
-export type ChoiceQuiz = {
-  type: "choice";
-  key: QuizableKey;
-  choices: string[];
-  answer: string;
-  userChoice: string | null;
+export type Choice = string;
+export type ChoiceQuiz<TChoice extends Choice = Choice> = {
+  readonly type: "choice";
+  readonly key: QuizableKey;
+  choices: TChoice[];
+  answer: TChoice;
+  userChoice: TChoice | null;
 };
 
 export type Quiz = MMDDQuiz | ChoiceQuiz;

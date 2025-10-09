@@ -10,11 +10,11 @@
 </template>
 
 <script setup lang="ts">
-  import type { ChoiceQuiz } from "../types";
+import type { ChoiceQuiz } from "../types";
 
-  defineProps<{
-    items: string[];
-  }>();
+defineProps<{
+  items: string[];
+}>();
 
-  const modelValue = defineModel<ChoiceQuiz>();
+const modelValue = defineModel<ChoiceQuiz>();
 </script>
