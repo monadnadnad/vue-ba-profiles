@@ -19,7 +19,7 @@ export type ProfileItem<T extends ProfileKey = ProfileKey> = {
   key: T;
   label: KeyToLabel[T];
   value: Student[T];
-  quiz?: T extends QuizableKey ? QuizFor<T & QuizableKey> : undefined;
+  quiz?: T extends QuizableKey ? QuizFor<T> : undefined;
 };
 
 export type QuizableKey = "BirthDay" | "Hobby" | "CharacterVoice" | "CharHeightMetric" | "CharacterAge";
