@@ -43,8 +43,8 @@
 import { onMounted, ref } from "vue";
 import ProfileCard from "./components/ProfileCard.vue";
 import studentsData from "./data/students.json";
+import { quizableProfileFields } from "./profileFields";
 import type { QuizableKey, QuizPrefs, Student } from "./types";
-import { keyToLabel } from "./utils";
 
 const defaultQuizPrefs: QuizPrefs = {
   BirthDay: true,
@@ -58,13 +58,10 @@ const students = studentsData as Student[];
 const showDrawer = ref(false);
 const currentStudent = ref<Student | null>(null);
 const quizPrefs = ref<QuizPrefs>(defaultQuizPrefs);
-const quizableItems: { key: QuizableKey; label: string }[] = [
-  { key: "CharacterAge", label: keyToLabel["CharacterAge"] },
-  { key: "CharHeightMetric", label: keyToLabel["CharHeightMetric"] },
-  { key: "BirthDay", label: keyToLabel["BirthDay"] },
-  { key: "Hobby", label: keyToLabel["Hobby"] },
-  { key: "CharacterVoice", label: keyToLabel["CharacterVoice"] },
-];
+const quizableItems: { key: QuizableKey; label: string }[] = quizableProfileFields.map(({ key, label }) => ({
+  key,
+  label,
+}));
 
 function nextStudent() {
   currentStudent.value = students[Math.floor(Math.random() * students.length)];

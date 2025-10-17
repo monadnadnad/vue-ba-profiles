@@ -9,20 +9,20 @@
     <v-divider class="my-2" />
     <v-card-text>
       <v-row dense>
-        <v-col v-for="item in profileItems" :key="item.key" class="pa-md-2" cols="12" md="6">
+        <v-col v-for="item in displayItems" :key="item.key" class="pa-md-2" cols="12" md="6">
           <div class="d-flex align-center">
             <v-chip color="primary" class="mr-4 justify-center" style="flex: 0 0 70px">
               {{ item.label }}
             </v-chip>
             <div class="flex-grow-1">
-              <template v-if="!isSubmitted && item.quiz && quizPrefs[item.key as QuizableKey]">
+              <template v-if="!isSubmitted && item.quiz">
                 <QuizChoice
                   v-if="item.quiz.type === 'choice'"
                   v-model="item.quiz"
                   :items="item.quiz.choices"
-                  :class="widthClass(item.key)"
+                  :class="item.widthClass"
                 />
-                <QuizMmdd v-else-if="item.quiz.type === 'mmdd'" v-model="item.quiz" class="input-short" />
+                <QuizMmdd v-else-if="item.quiz.type === 'mmdd'" v-model="item.quiz" :class="item.widthClass" />
               </template>
               <template v-else>
                 <span class="mr-2">{{ item.value }}</span>
@@ -51,30 +51,22 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
-import type { ProfileItem, ProfileKey, QuizableKey, QuizPrefs, QuizResult, Student } from "../types";
-import { keyToLabel, makeQuiz } from "../utils";
+import { computed, toRef } from "vue";
+import { useQuiz } from "../composables/useQuiz";
+import { profileFields } from "../profileFields";
+import type { ProfileKey, Quiz, QuizPrefs, QuizableKey, Student } from "../types";
 import QuizChoice from "./QuizChoice.vue";
 import QuizMmdd from "./QuizMmdd.vue";
-
-const displayKeys: Array<ProfileKey> = [
-  "School",
-  "SchoolYear",
-  "Club",
-  "CharacterAge",
-  "BirthDay",
-  "CharHeightMetric",
-  "Hobby",
-  "CharacterVoice",
-];
 
 const props = defineProps<{
   student: Student;
   quizPrefs: QuizPrefs;
 }>();
 
-const results = ref<Partial<Record<QuizableKey, QuizResult>>>({});
-const isSubmitted = computed(() => Object.keys(results.value).length > 0);
+const studentRef = toRef(props, "student");
+const quizPrefsRef = toRef(props, "quizPrefs");
+
+const { quizzes, results, isSubmitted, hasQuiz, checkAnswers } = useQuiz(studentRef, quizPrefsRef, profileFields);
 
 const iconUrl = computed(
   () => `https://raw.githubusercontent.com/SchaleDB/SchaleDB/main/images/student/icon/${props.student.Id}.webp`
@@ -86,35 +78,27 @@ const studentName = computed(() => {
   return name.startsWith(familyName) ? name : familyName + name;
 });
 
-const profileItems = ref<ProfileItem[]>([]);
-watch(
-  () => [props.student.Id, props.quizPrefs],
-  () => {
-    profileItems.value = displayKeys.map((key) => ({
-      key,
-      label: keyToLabel[key],
-      value: props.student[key],
-      quiz: props.quizPrefs[key as QuizableKey] ? makeQuiz(props.student, key as QuizableKey) : undefined,
-    }));
-  },
-  { immediate: true, deep: true }
+type DisplayItem = {
+  key: ProfileKey;
+  label: string;
+  widthClass: string;
+  value: string;
+  quiz: Quiz | null;
+};
+
+const displayItems = computed<DisplayItem[]>(() =>
+  profileFields.map((field) => {
+    const quiz = "supportsQuiz" in field ? (quizzes.value[field.key as QuizableKey] ?? null) : null;
+
+    return {
+      key: field.key,
+      label: field.label,
+      widthClass: field.widthClass,
+      value: props.student[field.key],
+      quiz,
+    };
+  })
 );
-
-const hasQuiz = computed(() => profileItems.value.some((item) => item.quiz));
-const widthClass = (key: string) => (["CharHeightMetric", "CharacterAge"].includes(key) ? "input-short" : "input-long");
-
-function checkAnswers() {
-  profileItems.value.forEach(({ key, quiz }) => {
-    if (!quiz) return;
-    const isCorrect =
-      quiz.type === "choice"
-        ? quiz.userChoice === quiz.answer
-        : quiz.type === "mmdd"
-          ? quiz.userMM === quiz.answerMM && quiz.userDD === quiz.answerDD
-          : false;
-    results.value[key as QuizableKey] = isCorrect ? "correct" : "incorrect";
-  });
-}
 </script>
 
 <style scoped>

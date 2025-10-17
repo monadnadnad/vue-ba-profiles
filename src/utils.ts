@@ -1,16 +1,5 @@
 import allStudentsData from "./data/students.json";
-import type { KeyToLabel, QuizableKey, QuizFor, Student } from "./types";
-
-export const keyToLabel: KeyToLabel = {
-  School: "学園",
-  SchoolYear: "学年",
-  Club: "部活動",
-  BirthDay: "誕生日",
-  CharHeightMetric: "身長",
-  Hobby: "趣味",
-  CharacterAge: "年齢",
-  CharacterVoice: "CV",
-};
+import type { QuizableKey, QuizFor, Student } from "./types";
 
 const students = allStudentsData as Student[];
 const createChoices = (key: QuizableKey): string[] => {

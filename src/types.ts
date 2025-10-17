@@ -14,13 +14,6 @@ export interface Student {
 }
 
 export type ProfileKey = Exclude<keyof Student, "Id" | "Name" | "FamilyName" | "FamilyNameRuby">;
-export type KeyToLabel = Record<ProfileKey, string>;
-export type ProfileItem<T extends ProfileKey = ProfileKey> = {
-  key: T;
-  label: KeyToLabel[T];
-  value: Student[T];
-  quiz?: T extends QuizableKey ? QuizFor<T> : undefined;
-};
 
 export type QuizableKey = "BirthDay" | "Hobby" | "CharacterVoice" | "CharHeightMetric" | "CharacterAge";
 export type QuizResult = "correct" | "incorrect";
